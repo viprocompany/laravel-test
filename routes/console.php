@@ -16,3 +16,8 @@ use Illuminate\Foundation\Inspiring;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+//пример заключения логики через замыкание анонимной функции с выводом в коммандной строке
+Artisan::command('hello', function () {
+    echo 'Hello maaan!';
+})->describe('Display an test command');
